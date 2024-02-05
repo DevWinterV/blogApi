@@ -1,0 +1,55 @@
+name: dockercompose9901974243116046916
+services:
+  contactdb:
+    container_name: contactDb
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: password@0903
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    networks:
+      backend: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "8001"
+        protocol: tcp
+  webapi:
+    build:
+      context: D:\HK1 -NAM4\ASP.NET\NMH02_N3\WEB API
+      dockerfile: WEB API\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      DB_HOST: contactdb
+      DB_NAME: contact
+      DB_SA_PASSWORD: password@0903
+    image: webapi
+    networks:
+      backend: null
+    ports:
+      - mode: ingress
+        target: 80
+        protocol: tcp
+      - mode: ingress
+        target: 80
+        published: "8002"
+        protocol: tcp
+      - mode: ingress
+        target: 443
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Users\HP\AppData\Roaming/Microsoft/UserSecrets
+        target: C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\HP\AppData\Roaming/ASP.NET/Https
+        target: C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https
+        read_only: true
+        bind:
+          create_host_path: true
+networks:
+  backend:
+    name: dockercompose9901974243116046916_backend

@@ -1,0 +1,29 @@
+version: '3.4'
+
+networks:
+    backend:
+
+services:
+  contactdb: 
+    container_name: contactDb
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+        - ACCEPT_EULA=Y
+        - SA_PASSWORD=password@0903
+    networks:
+        - backend
+    ports:
+        - 8001:1433
+  webapi:
+    image: ${DOCKER_REGISTRY-}webapi
+    build:
+      context: .
+      dockerfile: WEB API\Dockerfile
+    networks:
+      - backend
+    ports:
+        - 8002:80
+    environment:
+      - DB_HOST=contactdb
+      - DB_NAME=contact
+      - DB_SA_PASSWORD=password@0903

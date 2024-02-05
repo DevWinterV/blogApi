@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "Hash": "ohkBKIBELaDwf/oInluR/TxzYLfOVEOCkLI7583mE0g=",
+  "Source": "WEB API",
+  "BasePath": "_content/WEB API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WEB API\\wwwroot",
+      "Source": "WEB API",
+      "ContentRoot": "D:\\HK1 -NAM4\\ASP.NET\\NMH02_N3\\WEB API\\WEB API\\wwwroot\\",
+      "BasePath": "_content/WEB API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\HK1 -NAM4\\ASP.NET\\NMH02_N3\\WEB API\\WEB API\\wwwroot\\upload\\images\\image1.jpg",
+      "SourceId": "WEB API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\HK1 -NAM4\\ASP.NET\\NMH02_N3\\WEB API\\WEB API\\wwwroot\\",
+      "BasePath": "_content/WEB API",
+      "RelativePath": "upload/images/image1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\upload\\images\\image1.jpg"
+    },
+    {
+      "Identity": "D:\\HK1 -NAM4\\ASP.NET\\NMH02_N3\\WEB API\\WEB API\\wwwroot\\upload\\images\\image2.jpg",
+      "SourceId": "WEB API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\HK1 -NAM4\\ASP.NET\\NMH02_N3\\WEB API\\WEB API\\wwwroot\\",
+      "BasePath": "_content/WEB API",
+      "RelativePath": "upload/images/image2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\upload\\images\\image2.jpg"
+    },
+    {
+      "Identity": "D:\\HK1 -NAM4\\ASP.NET\\NMH02_N3\\WEB API\\WEB API\\wwwroot\\upload\\images\\image3.jpg",
+      "SourceId": "WEB API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\HK1 -NAM4\\ASP.NET\\NMH02_N3\\WEB API\\WEB API\\wwwroot\\",
+      "BasePath": "_content/WEB API",
+      "RelativePath": "upload/images/image3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\upload\\images\\image3.jpg"
+    },
+    {
+      "Identity": "D:\\HK1 -NAM4\\ASP.NET\\NMH02_N3\\WEB API\\WEB API\\wwwroot\\upload\\images\\image4.jpg",
+      "SourceId": "WEB API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\HK1 -NAM4\\ASP.NET\\NMH02_N3\\WEB API\\WEB API\\wwwroot\\",
+      "BasePath": "_content/WEB API",
+      "RelativePath": "upload/images/image4.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\upload\\images\\image4.jpg"
+    }
+  ]
+}
